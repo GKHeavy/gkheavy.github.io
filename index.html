@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>GK Heavy Ltd</title>
   <meta name="description" content="GK Heavy Ltd — Good furnaces come to those who work.">
 
@@ -53,6 +54,19 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+
+
+    @media (prefers-color-scheme: dark) {
+      html,
+      body {
+        background: #000;
+      }
+
+      .logo,
+      .email-image {
+        filter: invert(1);
+      }
     }
 
     @media (max-width: 600px) {
